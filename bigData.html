@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据监控平台</title>
+    <script type="text/javascript" src="bigData.js"></script>
+    <script src="mock/mock.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="bigData.css"/>
+</head>
+<body>
+<div class="title">数据监控</div>
+<div class="content">
+    <div class="content-left">
+        <div class="garden-data">
+            <div class="garden-data-title">
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <span>空中花园 (平均数据)</span>
+            </div>
+            <div class="garden-data-detail">
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+                <div class="garden-data-detail-content">
+                    <span>平均土壤温度</span>
+                    <span>20℃</span>
+                </div>
+            </div>
+        </div>
+        <div class="monitor-data">
+            <div class="garden-data-title">
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <span>监控平台 (摄像头监控)</span>
+            </div>
+            <div class="monitor-video">
+                <div class="video-detail">
+                    <img src="image/video.png"/>
+                    <img src="image/video.png"/>
+                    <img src="image/video.png"/>
+                </div>
+                <div class="realTime">
+                    <div class="realTime-title">实时数据</div>
+                    <div class="realTime-data-detail">
+                        <div class="garden-data-detail-content">
+                            <div>土壤温度</div>
+                            <div class="temperature-detail">
+                                <div class="temperature">
+                                    <span>土壤温度</span>
+                                    <span>20℃</span>
+                                </div>
+                                <div class="temperature">
+                                    <span>土壤湿度</span>
+                                    <span>10.1%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="garden-data-detail-content">
+                            <div>土壤温度</div>
+                            <div class="temperature-detail">
+                                <div class="temperature">
+                                    <span>土壤温度</span>
+                                    <span>20℃</span>
+                                </div>
+                                <div class="temperature">
+                                    <span>土壤湿度</span>
+                                    <span>10.1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-center">
+        <div class="map-title">河南省设备投放数据</div>
+        <div id="map" class="map"></div>
+        <script>
+            echarts.registerMap('陕西省', Json);
+            const chart = echarts.init(document.getElementById('map'), 'light');
+            const province = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}<br/>{c} 设备投放数量(/台)'
+                },
+                toolbox: {
+                    show: true,
+                    orient: 'vertical',
+                    left: 'right',
+                    top: 'center',
+                    feature: {
+                        dataView: {readOnly: false},
+                        restore: {},
+                        saveAsImage: {}
+                    }
+                },
+                visualMap: {
+                    min: 0,
+                    max: 100,
+                    text: ['High', 'Low'],
+                    textStyle: {
+                      color: '#fff'
+                    },
+                    realtime: false,
+                    calculable: true,
+                    inRange: {
+                        color: ['lightskyblue', 'yellow', 'orangered']
+                    }
+                },
+                series: [
+                    {
+                        type: 'map',
+                        map: '陕西省',
+                        label: {
+                            show: true
+                        },
+                        data: [
+                            {name: '郑州市', value: 10},
+                            {name: '开封市', value: 30},
+                            {name: '洛阳市', value: 50},
+                            {name: '平顶山市', value: 70},
+                            {name: '安阳市', value: 50},
+                            {name: '鹤壁市', value: 20},
+                            {name: '新乡市', value: 60},
+                            {name: '焦作市', value: 10},
+                            {name: '濮阳市', value: 30},
+                            {name: '许昌市', value: 80},
+                            {name: '漯河市', value: 90},
+                            {name: '三门峡市', value: 10},
+                            {name: '商丘市', value: 8},
+                            {name: '信阳市', value: 60},
+                            {name: '周口市', value: 10},
+                            {name: '驻马店市', value: 40},
+                            {name: '济源市', value: 50},
+                            {name: '南阳市', value: 30}
+                        ],
+                    }
+                ]
+            }
+            chart.setOption(province);
+        </script>
+    </div>
+    <div class="content-right">
+        <div class="garden-data">
+            <div class="garden-data-title">
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <span>温度曲线</span>
+            </div>
+            <div id="rotate-detail" class="rotate-detail"></div>
+            <script type="text/javascript">
+                let color = ['#5793f3', '#d14a61', '#675bba'];
+                let myChart = echarts.init(document.getElementById('rotate-detail'));
+                let option = {
+                    color: color,
+                    tooltip: {
+                        trigger: 'none',
+                        axisPointer: {
+                            type: 'cross'
+                        }
+                    },
+                    legend: {
+                        data: ['最高土壤温度', '最低土壤温度', '平均温度']
+                    },
+                    grid: {
+                        top: 70,
+                        bottom: 50
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisTick: {
+                                alignWithLabel: true
+                            },
+                            axisLine: {
+                                onZero: false,
+                                lineStyle: {
+                                    color: color[1]
+                                }
+                            },
+                            data: ['2016-1', '2016-2', '2016-3', '2016-4', '2016-5', '2016-6', '2016-7', '2016-8', '2016-9', '2016-10', '2016-11', '2016-12']
+                        },
+                        {
+                            type: 'category',
+                            axisTick: {
+                                alignWithLabel: true
+                            },
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value'
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '最高土壤温度',
+                            type: 'line',
+                            xAxisIndex: 1,
+                            smooth: true,
+                            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+                        },
+                        {
+                            name: '最低土壤温度',
+                            type: 'line',
+                            smooth: true,
+                            data: [3.9, 5.9, 11.1, 18.7, 48.3, 69.2, 231.6, 46.6, 55.4, 18.4, 10.3, 0.7]
+                        },
+                        {
+                            name: '平均温度',
+                            type: 'line',
+                            smooth: true,
+                            data: [1.0, 5.9, 10.0, 20.0, 65.0, 200.1, 100, 45.0, 18.6, 7.3, 2.1]
+                        }
+                    ]
+                };
+                myChart.setOption(option);
+            </script>
+        </div>
+        <div class="monitor-data">
+            <div class="garden-data-title">
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <img class="right-route" src="image/right.png"/>
+                <span>监控温度曲线列表</span>
+            </div>
+            <!--            <div id="rotate-detail" class="rotate-detail"></div>-->
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

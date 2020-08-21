@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    height: 7vh;
+    background-image: url("./image/title.png");
+    background-size: 100% 100%;
+    line-height: 7vh;
+    font-size: 30px;
+    text-align: center;
+    color: darkblue;
+}
+
+.content {
+    height: 93vh;
+    background-image: url("./image/background.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left {
+    height: 93vh;
+    width: 30%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-center {
+    height: 93vh;
+    width: 40%;
+    background: rgba(0, 0, 0, .5);
+    margin: 0 30px;
+}
+
+.content-right {
+    height: 93vh;
+    width: 30%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.garden-data {
+    height: 45vh;
+    width: 100%;
+    background: rgba(1, 1, 1, .5);
+    color: #fff;
+}
+
+.monitor-data {
+    height: 45vh;
+    width: 100%;
+    background: rgba(1, 1, 1, .5);
+    color: #fff;
+}
+
+.right-route {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: -7px;
+}
+
+.garden-data-title {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.garden-data-title>span {
+    font-size: 17px;
+    margin-left: 7px;
+    line-height: 20px;
+}
+
+.garden-data-detail-content {
+    width: 200px;
+    background-image: url("image/avgDiv.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #00a0e9;
+    text-align: center;
+}
+
+.garden-data-detail-content>span {
+    display: block;
+    font-size: 14px;
+}
+
+.garden-data-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.monitor-video {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.video-detail {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.video-detail>img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 5px;
+}
+
+.realTime {
+    margin-top: 20px;
+}
+
+.realTime-title {
+
+}
+
+.temperature {
+    margin: 0 10px;
+}
+
+.temperature>span {
+    display: block;
+}
+
+.temperature-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.realTime-data-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rotate-detail {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+}
+
+.map-title {
+    color: #fff;
+    margin: 30px 0 0 30px;
+}
