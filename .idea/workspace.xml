@@ -10,8 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38af2733-adab-4527-8208-32a8e0686bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/image/detail.png" afterDir="false" />
+    <list default="true" id="38af2733-adab-4527-8208-32a8e0686bcf" name="Default Changelist" comment="add some files">
+      <change afterPath="$PROJECT_DIR$/text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigData.css" beforeDir="false" afterPath="$PROJECT_DIR$/bigData.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigData.html" beforeDir="false" afterPath="$PROJECT_DIR$/bigData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigData.js" beforeDir="false" afterPath="$PROJECT_DIR$/bigData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -64,8 +68,16 @@
       <workItem from="1597886218578" duration="6287000" />
       <workItem from="1597899912132" duration="13659000" />
       <workItem from="1597971645785" duration="449000" />
-      <workItem from="1597972138727" duration="6552000" />
+      <workItem from="1597972138727" duration="24390000" />
     </task>
+    <task id="LOCAL-00001" summary="add some files">
+      <created>1597979005146</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597979005146</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +96,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597973871942">

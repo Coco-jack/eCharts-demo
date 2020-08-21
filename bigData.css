@@ -10,7 +10,8 @@
     line-height: 7vh;
     font-size: 30px;
     text-align: center;
-    color: darkblue;
+    background-color: #0d2040;
+    color: #00a0fe;
 }
 
 .content {
@@ -24,7 +25,6 @@
 .content-left {
     height: 93vh;
     width: 30%;
-    background: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,14 +34,13 @@
 .content-center {
     height: 93vh;
     width: 40%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .2);
     margin: 0 30px;
 }
 
 .content-right {
     height: 93vh;
     width: 30%;
-    background: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,14 +50,14 @@
 .garden-data {
     height: 45vh;
     width: 100%;
-    background: rgba(1, 1, 1, .5);
+    background: rgba(1, 1, 1, .3);
     color: #fff;
 }
 
 .monitor-data {
     height: 45vh;
     width: 100%;
-    background: rgba(1, 1, 1, .5);
+    background: rgba(1, 1, 1, .3);
     color: #fff;
 }
 
@@ -112,13 +111,18 @@
 
 .video-detail {
     display: flex;
-    flex-wrap: nowrap;
     overflow: hidden;
 }
 
-.video-detail>img {
-    display: block;
-    width: 200px;
+.video-scroll, .video-scroll-end {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.video-scroll-end>img, .video-scroll>img  {
+    width: 260px;
     height: 200px;
     margin: 0 5px;
 }
@@ -150,7 +154,7 @@
 }
 
 .rotate-detail {
-    margin-top: 20px;
+    margin-top: 70px;
     width: 100%;
     height: 300px;
 }
@@ -163,4 +167,33 @@
 .map-title {
     color: #fff;
     margin: 30px 0 0 30px;
+}
+
+.map-data {
+    margin-top: 30px;
+}
+
+.map-data-box {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.map-data-detail {
+    height: 150px;
+    width: 150px;
+    background-image: url(./image/detail.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position-y: -10px;
+}
+
+.map-data-detail>span {
+    display: block;
+    color: #fff;
+    text-align: center;
 }
