@@ -59,6 +59,7 @@
     width: 100%;
     background: rgba(1, 1, 1, .3);
     color: #fff;
+    overflow: hidden;
 }
 
 .right-route {
@@ -83,7 +84,7 @@
 }
 
 .garden-data-scroll {
-    height: 200px;
+    height: 350px;
     overflow: hidden;
     margin-top: 30px;
 }
@@ -105,6 +106,12 @@
 }
 
 .garden-data-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.garden-data-detail-scroll {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -135,6 +142,7 @@
 
 .realTime {
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .realTime-title {
@@ -154,12 +162,21 @@
     justify-content: space-around;
 }
 
-.realTime-data-detail {
-    display: flex;
-    justify-content: space-around;
-}
+/*.realTime-data-detail {*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    overflow: hidden;*/
+/*}*/
 
 .rotate-detail {
+    margin-top: 70px;
+    width: 90%;
+    height: 300px;
+    margin-left: 30px;
+    display: block;
+}
+
+.temperature-rotate-detail {
     margin-top: 70px;
     width: 100%;
     height: 300px;
@@ -177,12 +194,24 @@
 
 .map-data {
     margin-top: 30px;
+    padding: 0 30px;
+    overflow: hidden;
 }
 
 .map-data-box {
     display: flex;
-    justify-content: space-around;
     overflow: hidden;
+}
+
+.map-data-scroll-end {
+    display: flex;
+    overflow: hidden;
+    padding-left: 60px;
+}
+
+.map-data-scroll {
+    display: flex;
+    justify-content: space-around;
 }
 
 .map-data-detail {
@@ -202,4 +231,157 @@
     display: block;
     color: #fff;
     text-align: center;
+}
+
+/*.garden-scroll-container, .realTime-scroll-end {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+.realTime-data-detail-content {
+
+}
+
+.realTime-data-detail-scroll {
+    display: flex;
+    overflow: hidden;
+}
+
+.realTime-container {
+    width: 200%;
+    margin-top: 6px;
+    display: flex;
+    overflow: hidden;
+}
+
+.realTime-scroll-container {
+    overflow: hidden;
+}
+
+.realTime-scroll-end {
+    overflow: hidden;
+}
+
+.realTime-scroll-detail {
+
+}
+
+.realTime-data-detail {
+    width: 50%;
+    background-image: url("image/avgDiv.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #00a0e9;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.realTime-data {
+    display: flex;
+}
+
+.map-data-scroll-detail {
+    display: flex;
+}
+
+.scroll {
+    width: 200%;
+    margin-top: 6px;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.mySlides {
+    display: none
+}
+
+.mySlides:nth-child(1) {
+    display: block
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

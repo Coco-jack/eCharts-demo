@@ -63,7 +63,7 @@
                         <span>20℃</span>
                     </div>
                 </div>
-                <div id="garden-data-detail-scroll"></div>
+                <div id="garden-data-detail-scroll" class="garden-data-detail-scroll"></div>
             </div>
         </div>
         <div class="monitor-data">
@@ -83,33 +83,105 @@
                 </div>
                 <div class="realTime">
                     <div class="realTime-title">实时数据</div>
-                    <div class="realTime-data-detail">
-                        <div class="garden-data-detail-content">
-                            <div>土壤温度</div>
-                            <div class="temperature-detail">
-                                <div class="temperature">
-                                    <span>土壤温度</span>
-                                    <span>20℃</span>
-                                </div>
-                                <div class="temperature">
-                                    <span>土壤湿度</span>
-                                    <span>10.1%</span>
+                    <div class="realTime-container">
+                        <div class="realTime-scroll-container" id="realTime-data-detail">
+                            <div class="realTime-scroll-detail" id="realTime-scroll-detail">
+                                <div class="realTime-data">
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="realTime-data-detail">
+                                        <div>土壤温度</div>
+                                        <div class="temperature-detail">
+                                            <div class="temperature">
+                                                <span>土壤温度</span>
+                                                <span>20℃</span>
+                                            </div>
+                                            <div class="temperature">
+                                                <span>土壤湿度</span>
+                                                <span>10.1%</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="garden-data-detail-content">
-                            <div>土壤温度</div>
-                            <div class="temperature-detail">
-                                <div class="temperature">
-                                    <span>土壤温度</span>
-                                    <span>20℃</span>
-                                </div>
-                                <div class="temperature">
-                                    <span>土壤湿度</span>
-                                    <span>10.1%</span>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="realTime-scroll-end" id="realTime-scroll-end"></div>
                     </div>
                 </div>
             </div>
@@ -183,27 +255,58 @@
             chart.setOption(province);
         </script>
         <div class="map-data">
-            <div class="map-data-box">
-                <div class="map-data-detail">
-                    <span>平均土壤温度</span>
-                    <span>22°C</span>
+            <div class="scroll">
+                <div class="map-data-box" id="map-data-box">
+                    <div class="map-scroll-container" id="map-data-scroll">
+                        <div style="display: flex">
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                            <div class="map-data-detail">
+                                <span>平均土壤温度</span>
+                                <span>22°C</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="map-data-detail">
-                    <span>平均土壤温度</span>
-                    <span>22°C</span>
-                </div>
-                <div class="map-data-detail">
-                    <span>平均土壤温度</span>
-                    <span>22°C</span>
-                </div>
-                <div class="map-data-detail">
-                    <span>平均土壤温度</span>
-                    <span>22°C</span>
-                </div>
-                <div class="map-data-detail">
-                    <span>平均土壤温度</span>
-                    <span>22°C</span>
-                </div>
+                <div id="map-data-scroll-end" class="map-data-scroll-end"></div>
             </div>
         </div>
     </div>
@@ -215,7 +318,7 @@
                 <img class="right-route" src="image/right.png"/>
                 <span>温度曲线</span>
             </div>
-            <div id="rotate-detail" class="rotate-detail"></div>
+            <div id="rotate-detail" class="temperature-rotate-detail"></div>
             <script type="text/javascript">
                 let color = ['#5793f3', '#d14a61', '#675bba'];
                 let myChart = echarts.init(document.getElementById('rotate-detail'));
@@ -297,70 +400,151 @@
                 <img class="right-route" src="image/right.png"/>
                 <span>监控温度曲线列表</span>
             </div>
-            <div id="data-list" class="rotate-detail"></div>
-            <script>
-                let envTemperature = echarts.init(document.getElementById('data-list'))
-                let envTemperatureOption = {
-                    title: {
-                        text: '环境温度日统计柱状图 1',
-                        x: 'center',
-                        textStyle: {
-                            color: '#fff',
-                            fontSize: 14,
-                            fontWeight: 0,
-                        }
-                    },
-                    tooltip: {
-                      trigger: 'axis'
-                    },
-                    xAxis: {
-                        type: 'category',
-                        name: '日',
-                        nameTextStyle: {
-                            color: '#fff'
+
+            <div class="slideshow-container">
+                <div id="data-list" class="rotate-detail"></div>
+                <script>
+                    let envTemperature = echarts.init(document.getElementById('data-list'))
+                    let envTemperatureOption = {
+                        title: {
+                            text: '环境温度日统计柱状图 1',
+                            x: 'center',
+                            textStyle: {
+                                color: '#fff',
+                                fontSize: 14,
+                                fontWeight: 0,
+                            }
                         },
-                        axisLine: {
-                            lineStyle: {
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        xAxis: {
+                            type: 'category',
+                            name: '日',
+                            nameTextStyle: {
+                                color: '#fff'
+                            },
+                            axisLine: {
+                                lineStyle: {
+                                    color: '#fff'
+                                }
+                            },
+                            data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16']
+                        },
+                        yAxis: {
+                            type: 'value',
+                            name: '环境温度/°C',
+                            nameTextStyle: {
+                                color: '#fff'
+                            },
+                            axisLine: {
+                                lineStyle: {
+                                    color: '#fff'
+                                }
+                            }
+                        },
+                        series: [
+                            {
+                                data: [120, 200, 150, 80, 70, 110, 130, 70, 100, 150, 160, 180, 170, 160, 89, 100],
+                                type: 'bar',
+                                name: '最高环境温度',
+                                label: {
+                                    formatter: '{a}: {@value}°C'
+                                }
+                            },
+                            {
+                                data: [120, 200, 150, 80, 70, 110, 130, 70, 100, 150, 160, 180, 170, 160, 89, 100],
+                                type: 'bar',
+                                name: '最低环境温度'
+                            },
+                            {
+                                data: [120, 200, 150, 80, 70, 110, 130, 70, 100, 150, 160, 180, 170, 160, 89, 100],
+                                type: 'bar',
+                                name: '平均环境温度'
+                            }
+                        ]
+                    }
+                    envTemperature.setOption(envTemperatureOption)
+                </script>
+                <div id="broken" class="rotate-detail"></div>
+                <script>
+                    let colors = ['#5793f3', '#d14a61', '#675bba'];
+                    let brokenCharts = echarts.init(document.getElementById('broken'));
+                    let brokenChartsPic = {
+                        color: colors,
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: ['最高土壤温度', '最低土壤温度', '平均温度'],
+                            textStyle: {
                                 color: '#fff'
                             }
                         },
-                        data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16']
-                    },
-                    yAxis: {
-                        type: 'value',
-                        name: '环境温度/°C',
-                        nameTextStyle: {
-                            color: '#fff'
+                        grid: {
+                            top: 70,
+                            bottom: 70,
+                            containLabel: true
                         },
-                        axisLine: {
-                            lineStyle: {
-                                color: '#fff'
+                        xAxis: [
+                            {
+                                type: 'category',
+                                axisTick: {
+                                    alignWithLabel: true
+                                },
+                                axisLine: {
+                                    onZero: false,
+                                    lineStyle: {
+                                        color: '#fff'
+                                    }
+                                },
+                                data: ['2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09']
+                            },
+                            {
+                                type: 'category',
+                                axisTick: {
+                                    alignWithLabel: true
+                                },
                             }
-                        }
-                    },
-                    series: [
-                        {
-                            data: [120, 200, 150, 80, 70, 110, 130, 70, 100, 150, 160, 180, 170, 160, 89, 100],
-                            type: 'bar',
-                            name: '最高环境温度',
-                            label: {
-                                formatter: '{a}: {@value}°C'
+                        ],
+                        yAxis: [
+                            {
+                                type: 'value',
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#fff'
+                                    }
+                                },
                             }
-                        },
-                        {
-                            data: [120, 200, 150, 80, 70, 110, 130, 70, 100, 150, 160, 180, 170, 160, 89, 100],
-                            type: 'bar',
-                            name: '最低环境温度'
-                        },
-                        {
-                            data: [120, 200, 150, 80, 70, 110, 130, 70, 100, 150, 160, 180, 170, 160, 89, 100],
-                            type: 'bar',
-                            name: '平均环境温度'
-                        }
-                    ]
-                }
-                envTemperature.setOption(envTemperatureOption)
-            </script>
+                        ],
+                        series: [
+                            {
+                                name: '最高土壤温度',
+                                type: 'line',
+                                smooth: true,
+                                data: [20, 25, 31, 20, 20, 30, 28, 38, 31, 35, 30, 35]
+                            },
+                            {
+                                name: '最低土壤温度',
+                                type: 'line',
+                                smooth: true,
+                                data: [18, 15, 17, 12, 13, 14, 19, 30, 28, 30, 24, 26]
+                            },
+                            {
+                                name: '平均温度',
+                                type: 'line',
+                                smooth: true,
+                                data: [19, 20, 25, 16, 15, 15, 25, 34, 29, 33, 26, 30]
+                            }
+                        ]
+                    };
+                    brokenCharts.setOption(brokenChartsPic);
+                </script>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+
+
         </div>
     </div>
 </div>
